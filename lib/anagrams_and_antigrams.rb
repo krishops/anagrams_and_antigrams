@@ -5,8 +5,8 @@ class Anagram
   end
 
   def check_anagram
-    word_array1 = @word1.split("")
-    word_array2 = @word2.split("")
+    word_array1 = @word1.downcase.split("")
+    word_array2 = @word2.downcase.split("")
     (word_array1.sort) == (word_array2.sort)
 end
 end
