@@ -13,4 +13,9 @@ describe('#anagrams') do
     word = Anagram.new("hello world")
     expect(word.check_anagram).to(eq(["h", "e", "l", "l", "o", "w", "o", "r", "l", "d"]))
   end
+
+  it("sorts the array alphabetically") do
+    word = Anagram.new("ruby")
+    expect(word.check_anagram).to(eq(["b", "r", "u", "y"]))
+  end
 end
