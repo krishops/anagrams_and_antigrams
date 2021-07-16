@@ -4,7 +4,8 @@ class Anagram
   end
 
   def check_anagram
-    word_array = @word.split("")
+    one_word = @word.delete(' ')
+    word_array = one_word.split("")
 
   end
 end
