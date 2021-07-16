@@ -5,12 +5,15 @@ class Anagram
   end
 
   def check_anagram
+    word1_array = @word1.downcase.split("").sort
+    word2_array = @word2.downcase.split("").sort
     if ((@word1.downcase.scan(/[aeiou]/i).length == 0) && (@word2.downcase.scan(/[aeiou]/i).length == 0))
       "You need to input actual words"
-    elsif 
+    elsif (word1_array.all?(word2_array) == false)
+      # binding.pry
       # (@word1.downcase.scan(//) != @word2.downcase.scan(//))
-      # "These words have no letter matches and are antigrams"
-    elsif ((@word1.downcase.split("").sort) == (@word2.downcase.split("").sort))
+      "These words have no letter matches and are antigrams"
+    elsif (word1_array == word2_array)
       "These words are anagrams"
     else
       "These words are not anagrams or antigrams"
