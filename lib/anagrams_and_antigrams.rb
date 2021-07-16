@@ -10,11 +10,6 @@ class Anagram
     if ((@word1.downcase.scan(/[aeiou]/i).length == 0) && (@word2.downcase.scan(/[aeiou]/i).length == 0))
       "You need to input actual words"
     elsif ((word1_array.any? {|word1| word2_array.include?(word1)}) == false)
-      
-      # (word1_array.all?(word2_array) == false)
-  
-      # binding.pry
-      # (@word1.downcase.scan(//) != @word2.downcase.scan(//))
       "These words have no letter matches and are antigrams"
     elsif (word1_array == word2_array)
       "These words are anagrams"
@@ -34,3 +29,9 @@ end
   #   word_array2 = @word2.split("")
   #   # word_array.sort
   # end
+
+     
+      # (word1_array.all?(word2_array) == false)
+  
+      # binding.pry
+      # (@word1.downcase.scan(//) != @word2.downcase.scan(//))

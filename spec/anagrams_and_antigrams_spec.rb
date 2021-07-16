@@ -41,6 +41,11 @@ describe('#check_anagram') do
     expect(new_check.check_anagram).to(eq("These words are not anagrams or antigrams"))
   end
 
+  it("checks if two sentences are anagrams") do
+    new_check = Anagram.new("Clint Eastwood", "Old West action")
+    expect(new_check.check_anagram).to(eq("These words are anagrams"))
+  end
+
 end
 
 
