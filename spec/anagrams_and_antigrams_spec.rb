@@ -7,8 +7,8 @@ require('pry')
 # tests to write: check if two words are anagrams
                       # probably don't need to test if code returns arrays, just write test for comparison, so a boolean I guess CHECK
                 # add code to account for cases: Eat and Tea will return true CHECK
-                # rules for inputs CHECK, phrases aren't anagrams - will be tricky
-                # accounting for sentences should be pretty simple based on what I already know
+                # rules for inputs CHECK, phrases aren't anagrams CHECK - will be tricky
+                # accounting for sentences should be pretty simple based on what I already know - spaces CHECK punctuation
 
 describe('#check_anagram') do
   it("checks if two words are anagrams") do
@@ -43,6 +43,11 @@ describe('#check_anagram') do
 
   it("checks if two sentences are anagrams") do
     new_check = Anagram.new("Clint Eastwood", "Old West action")
+    expect(new_check.check_anagram).to(eq("These words are anagrams"))
+  end
+
+  it("checks if two sentences with punctuation are anagrams") do
+    new_check = Anagram.new("Clint Eastwood.", "Old West action!")
     expect(new_check.check_anagram).to(eq("These words are anagrams"))
   end
 
