@@ -1,12 +1,11 @@
 class Anagram
-  def initialize(word)
-    @word = word
-    @comp_word
-  end
-
-  def check_anagram
-    one_word = @word.delete(' ')
-    word_array = one_word.downcase.split("")
-    # word_array.sort
-  end
+  
 end
+
+
+
+  # word1_no_space = @word1.delete(' ')
+  #   word_array1 = word1_no_space.downcase.split("")
+  #   word_array2 = @word2.split("")
+  #   # word_array.sort
+  # end
