@@ -5,9 +5,9 @@ require('pry')
 
 # 9:50 - start over
 # tests to write: check if two words are anagrams
-                      # probably don't need to test if code returns arrays, just write test for comparison, so a boolean I guess
-                # add code to account for cases: Eat and Tea will return true
-                # rule for inputs, phrases aren't anagrams will be tricky
+                      # probably don't need to test if code returns arrays, just write test for comparison, so a boolean I guess CHECK
+                # add code to account for cases: Eat and Tea will return true CHECK
+                # rules for inputs, phrases aren't anagrams - will be tricky
                 # accounting for sentences should be pretty simple based on what I already know
 
 describe('#check_anagram') do
@@ -19,6 +19,11 @@ describe('#check_anagram') do
   it("checks if two words with different cases are anagrams") do
     new_check = Anagram.new("Ruby", "Bury")
     expect(new_check.check_anagram).to(eq(true))
+  end
+
+  it("returns "These words are anagrams" if true") do
+    new_check = Anagram.new("Ruby", "Bury")
+    expect(new_check.check_anagram).to(eq("These words are anagrams"))
   end
 end
 
