@@ -10,6 +10,7 @@ class Anagram
     if ((@word1.downcase.scan(/[aeiou]/i).length == 0) && (@word2.downcase.scan(/[aeiou]/i).length == 0))
       "You need to input actual words"
     elsif (word1_array.all?(word2_array) == false)
+      # literals?
       # binding.pry
       # (@word1.downcase.scan(//) != @word2.downcase.scan(//))
       "These words have no letter matches and are antigrams"
