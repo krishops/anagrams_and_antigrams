@@ -27,7 +27,7 @@ Testing should output:
 
 ## Known Bugs
 
-* There are no known bugs in this project.
+* script.rb file does not run
 
 ## License
 
