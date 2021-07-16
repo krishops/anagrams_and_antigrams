@@ -13,25 +13,8 @@ class Anagram
       "These words have no letter matches and are antigrams"
     elsif (word1_array == word2_array)
       "These words are anagrams"
-    elsif (word1_array != word2_array)
+    else
       "These words are not anagrams or antigrams"
     end
   end
 end
-
-
-# word1_array.each do |letter, i|
-#   if letter = word2_array[i]
-
-
-  # word1_no_space = @word1.delete(' ')
-  #   word_array1 = word1_no_space.downcase.split("")
-  #   word_array2 = @word2.split("")
-  #   # word_array.sort
-  # end
-
-     
-      # (word1_array.all?(word2_array) == false)
-  
-      # binding.pry
-      # (@word1.downcase.scan(//) != @word2.downcase.scan(//))

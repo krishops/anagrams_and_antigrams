@@ -6,6 +6,8 @@
 
 * _Ruby_
 * _Docker_
+* _rspec_
+* _pry_
 
 ## Description
 
@@ -13,30 +15,15 @@ This algorithm was developed to determine if two given inputs are anagrams or an
 
 ## Setup/Installation Requirements
 
-To use this project, you will first need to install [Docker](https://docs.docker.com/get-docker/). Once it is installed, run:
-```
-$ docker pull ruby:2.6.5
-```
-in the terminal to pull and install the correct image of Ruby on your machine.
+To use this project, you will first need to install [Docker](https://docs.docker.com/get-docker/). Once it is installed, run `docker pull ruby:2.6.5` in the terminal to pull and install the correct image of Ruby on your machine.
 
-Once Docker is installed complete the following steps:
-
-1. Clone the project: `$ git clone https://github.com/krishops/anagrams_and_antigrams`
-2. Within your command line:
-    * Navigate to `galactic-age/`
-    * Run `npm init -y` to prepare for npm install
-    * Run `npm install` to install dependencies
-    * Run `npm run build` to bundle the program for use
-3. Open `galactic-age/dist/index.html` to use the program in the browser
-4. To open a development server run `npm run start` in the command line
+You can now clone the project by running `git clone https://github.com/krishops/anagrams_and_antigrams` in the terminal.
 
 ## Project Testing
 
-1. Within the command line run `npm test` to run all tests using Jest.
-2. Confirm that all tests are passing and that all Business Logic code has 100% test coverage.
-
-**1 Test Suite**  
-**17 Tests**
+Within the root directory, run the command `docker-compose up` to run the rspec tests of the project.
+Testing should output:
+**8 examples, 0 failures**  
 
 ## Known Bugs
 
