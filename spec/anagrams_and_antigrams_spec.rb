@@ -31,6 +31,15 @@ describe('#check_anagram') do
     expect(new_check.check_anagram).to(eq("These words have no letter matches and are antigrams"))
   end
 
+  it("checks if inputs are antigrams") do
+    new_check = Anagram.new("desk", "chair")
+    expect(new_check.check_anagram).to(eq("These words have no letter matches and are antigrams"))
+  end
+
+  it("checks if inputs are anagrams") do
+    new_check = Anagram.new("foo", "foobar")
+    expect(new_check.check_anagram).to(eq("These words are not anagrams or antigrams"))
+  end
 
 end
 

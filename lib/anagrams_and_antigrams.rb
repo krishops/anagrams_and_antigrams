@@ -7,8 +7,9 @@ class Anagram
   def check_anagram
     if ((@word1.downcase.scan(/[aeiou]/i).length == 0) && (@word2.downcase.scan(/[aeiou]/i).length == 0))
       "You need to input actual words"
-    elsif (@word1.downcase.scan(//) != @word2.downcase.scan(//))
-      "These words have no letter matches and are antigrams"
+    elsif 
+      # (@word1.downcase.scan(//) != @word2.downcase.scan(//))
+      # "These words have no letter matches and are antigrams"
     elsif ((@word1.downcase.split("").sort) == (@word2.downcase.split("").sort))
       "These words are anagrams"
     else
