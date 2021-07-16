@@ -21,6 +21,12 @@ describe('#check_anagram') do
     expect(new_check.check_anagram).to(eq("These words are anagrams"))
   end
 
+  it("checks if inputs are words") do
+    new_check = Anagram.new("pkmn", "kmpn")
+    expect(new_check.check_anagram).to(eq("You need to input actual words"))
+  end
+
+
 end
 
 
