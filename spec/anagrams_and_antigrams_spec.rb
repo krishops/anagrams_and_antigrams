@@ -14,8 +14,13 @@ describe('#anagrams') do
     expect(word.check_anagram).to(eq(["h", "e", "l", "l", "o", "w", "o", "r", "l", "d"]))
   end
 
-  it("sorts the array alphabetically") do
-    word = Anagram.new("ruby")
-    expect(word.check_anagram).to(eq(["b", "r", "u", "y"]))
+  # it("sorts the array alphabetically") do
+  #   word = Anagram.new("ruby")
+  #   expect(word.check_anagram).to(eq(["b", "r", "u", "y"]))
+  # end
+
+  it("turns all uppercase letters into lowercase") do
+    word = Anagram.new("RUby")
+    expect(word.check_anagram).to(eq(["r", "u", "b", "y"]))
   end
 end
