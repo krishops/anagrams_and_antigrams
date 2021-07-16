@@ -8,7 +8,7 @@ require('pry')
                       # probably don't need to test if code returns arrays, just write test for comparison, so a boolean I guess CHECK
                 # add code to account for cases: Eat and Tea will return true CHECK
                 # rules for inputs CHECK, phrases aren't anagrams CHECK - will be tricky
-                # accounting for sentences should be pretty simple based on what I already know - spaces CHECK punctuation
+                # accounting for sentences should be pretty simple based on what I already know - spaces CHECK punctuation CHECK
 
 describe('#check_anagram') do
   it("checks if two words are anagrams") do
