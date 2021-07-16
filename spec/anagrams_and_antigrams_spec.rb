@@ -15,9 +15,12 @@ describe('#check_anagram') do
     new_check = Anagram.new("ruby", "bury")
     expect(new_check.check_anagram).to(eq(true))
   end
-end
-  
 
+  it("checks if two words with different cases are anagrams") do
+    new_check = Anagram.new("Ruby", "Bury")
+    expect(new_check.check_anagram).to(eq(true))
+  end
+end
 
 
 
