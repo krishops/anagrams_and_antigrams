@@ -13,18 +13,14 @@ require('pry')
 describe('#check_anagram') do
   it("checks if two words are anagrams") do
     new_check = Anagram.new("ruby", "bury")
-    expect(new_check.check_anagram).to(eq(true))
+    expect(new_check.check_anagram).to(eq("These words are anagrams"))
   end
 
   it("checks if two words with different cases are anagrams") do
     new_check = Anagram.new("Ruby", "Bury")
-    expect(new_check.check_anagram).to(eq(true))
-  end
-
-  it("returns "These words are anagrams" if true") do
-    new_check = Anagram.new("Ruby", "Bury")
     expect(new_check.check_anagram).to(eq("These words are anagrams"))
   end
+
 end
 
 

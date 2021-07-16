@@ -6,8 +6,9 @@ class Anagram
 
   def check_anagram
     (@word1.downcase.split("").sort) == (@word2.downcase.split("").sort)
-
+    "These words are anagrams"
 end
+
 end
 
 
