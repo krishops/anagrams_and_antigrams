@@ -5,10 +5,15 @@ class Anagram
   end
 
   def check_anagram
-    (@word1.downcase.split("").sort) == (@word2.downcase.split("").sort)
-    "These words are anagrams"
+    if ((@word1.downcase.scan(/[aeiou]/i).length == 0) && (@word2.downcase.scan(/[aeiou]/i).length == 0))
+      "You need to input actual words"
+    elsif ((@word1.downcase.split("").sort) == (@word2.downcase.split("").sort))
+      "These words are anagrams"
+
+
 end
 
+end
 end
 
 
